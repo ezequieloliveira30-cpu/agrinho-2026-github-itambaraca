@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Sustentabilidade em Itambaraca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Agro Forte</h1>
+            </div>
+            <div class="nav-buttons">
+                <button id="darkModeToggle" class="btn-icon" title="Alternar modo escuro">
+                    <span id="darkModeIcon">🌙</span>
+                </button>
+                <button id="fontSizeToggle" class="btn-icon" title="Aumentar tamanho de letras">
+                    <span id="fontSizeIcon">A+</span>
+                </button>
+                <a href="#credits" class="nav-link">Créditos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Objetivo -->
+    <section id="objetivo" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Objetivo do Projeto</h1>
+            <div class="objective-box slide-in">
+                <h2>🎯 Agro Forte: Sustentabilidade na Agricultura</h2>
+                <p class="objective-text">
+                    Este projeto visa demonstrar a importância da sustentabilidade agrícola como pilar fundamental 
+                    para o fortalecimento do agronegócio. Exploramos como práticas sustentáveis, inovação tecnológica 
+                    e respeito ao meio ambiente podem criar uma agricultura mais forte, produtiva e responsável.
+                </p>
+                <div class="objective-highlights">
+                    <div class="highlight-item bounce-in">
+                        <span class="highlight-icon">🌱</span>
+                        <p>Sustentabilidade Ambiental</p>
+                    </div>
+                    <div class="highlight-item bounce-in">
+                        <span class="highlight-icon">💪</span>
+                        <p>Força Econômica</p>
+                    </div>
+                    <div class="highlight-item bounce-in">
+                        <span class="highlight-icon">🤝</span>
+                        <p>Responsabilidade Social</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itambaraca Section -->
+    <section id="itambaraca" class="itambaraca-section">
+        <div class="container">
+            <h2 class="section-title">🗺️ Agricultura em Itambaraca</h2>
+            
+            <div class="itambaraca-content">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4234567890!2d-50.1234567!3d-25.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95191234%3A0x1234567890!2sItambaraca!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="info-box fade-in-delay">
+                    <h3>Localização de Itambaraca</h3>
+                    <p>
+                        Itambaraca é um município localizado no estado do Rio Grande do Sul, 
+                        na região norte do estado. A região possui uma longa tradição agrícola, 
+                        com destaque para:
+                    </p>
+                    <ul class="info-list">
+                        <li>✓ Produção de grãos (soja, milho, trigo)</li>
+                        <li>✓ Criação de gado e pecuária</li>
+                        <li>✓ Cultivo de produtos orgânicos</li>
+                        <li>✓ Agroturismo e agricultura familiar</li>
+                        <li>✓ Práticas sustentáveis e preservação ambiental</li>
+                    </ul>
+                    <div class="agriculture-stats">
+                        <div class="stat">
+                            <h4>Região</h4>
+                            <p>Norte do Rio Grande do Sul</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Clima</h4>
+                            <p>Subtropical Úmido</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Economia</h4>
+                            <p>Agrícola e Pecuária</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">🧠 Quiz: Sustentabilidade Agrícola - Nível Fácil</h2>
+            <p class="quiz-intro">Teste seus conhecimentos sobre sustentabilidade na agricultura!</p>
+
+            <div id="quizContainer" class="quiz-container">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <div id="quizResult" class="quiz-result hidden">
+                <h3>Seu Resultado</h3>
+                <div class="result-score">
+                    <p id="scoreText"></p>
+                    <div class="score-bar">
+                        <div id="scoreBar" class="score-fill"></div>
+                    </div>
+                </div>
+                <div id="resultMessage" class="result-message"></div>
+                <button id="restartQuiz" class="btn-primary">Fazer Quiz Novamente</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Tips Section -->
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <h2 class="section-title">💡 Dicas de Sustentabilidade Agrícola</h2>
+            <div class="tips-grid">
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">🌍</div>
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar plantações mantém o solo saudável e reduz pragas naturalmente.</p>
+                </div>
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">💧</div>
+                    <h3>Irrigação Eficiente</h3>
+                    <p>Use sistemas modernos que economizam água e aumentam a produtividade.</p>
+                </div>
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">♻️</div>
+                    <h3>Compostagem</h3>
+                    <p>Transforme resíduos em adubo natural para fertilizar o solo.</p>
+                </div>
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">🚜</div>
+                    <h3>Tecnologia Agrícola</h3>
+                    <p>Máquinas modernas aumentam eficiência e reduzem impacto ambiental.</p>
+                </div>
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">🐝</div>
+                    <h3>Biodiversidade</h3>
+                    <p>Proteja polinizadores e crie habitats para fauna silvestre.</p>
+                </div>
+                <div class="tip-card hover-lift">
+                    <div class="tip-icon">☀️</div>
+                    <h3>Energia Renovável</h3>
+                    <p>Painéis solares e energia eólica reduzem custos e emissões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits Section -->
+    <section id="credits" class="credits-section">
+        <div class="container">
+            <h2 class="section-title">📋 Créditos</h2>
+            <div class="credits-content">
+                <div class="credit-box">
+                    <h3>Aluno</h3>
+                    <p class="credit-name">Ezequiel Oliveira</p>
+                </div>
+                <div class="credit-box">
+                    <h3>Professor Orientador</h3>
+                    <p class="credit-name">Guilherme Cordeiro</p>
+                </div>
+                <div class="credit-box">
+                    <h3>Projeto</h3>
+                    <p class="credit-name">Agrinho 2026 - Nível 3</p>
+                    <p class="credit-detail">Tema: Agro Forte</p>
+                </div>
+            </div>
+            <p class="copyright">© 2026 - Todos os direitos reservados | Projeto Agrinho 2026</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
